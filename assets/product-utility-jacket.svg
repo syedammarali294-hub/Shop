@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-label="Utility jacket product">
+  <rect width="720" height="900" fill="#e7ded0"/>
+  <path d="M248 142h224l90 164-54 36-50-82v474H262V260l-50 82-54-36z" fill="#0f766e"/>
+  <path d="M318 142h84l42 86H276z" fill="#a8d1cb"/>
+  <path d="M360 232v502" stroke="#0a514b" stroke-width="10"/>
+  <rect x="284" y="332" width="58" height="72" rx="6" fill="#0a514b"/>
+  <rect x="378" y="332" width="58" height="72" rx="6" fill="#0a514b"/>
+  <rect x="284" y="510" width="58" height="86" rx="6" fill="#0a514b"/>
+  <rect x="378" y="510" width="58" height="86" rx="6" fill="#0a514b"/>
+</svg>

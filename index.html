@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Threadline | Online Clothing Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Threadline home">
+        <span class="brand-mark">T</span>
+        <span>Threadline</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#shop">Shop</a>
+        <a href="#collections">Collections</a>
+        <a href="#checkout">Checkout</a>
+        <a href="#admin">Admin</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" id="loginOpen" type="button" aria-label="Open login">
+          <span class="user-icon" aria-hidden="true"></span>
+          <span class="desktop-only">Login</span>
+        </button>
+        <button class="cart-button" id="cartOpen" type="button" aria-label="Open cart">
+          <span class="cart-icon" aria-hidden="true"></span>
+          <span>Cart</span>
+          <strong id="cartCount">0</strong>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <div class="announcement" id="siteAnnouncement" hidden></div>
+
+      <section class="hero" id="home">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">New season essentials</p>
+          <h1>Threadline</h1>
+          <p>Modern everyday clothing for work, weekends, and everything between.</p>
+          <div class="hero-actions">
+            <a class="primary-link" href="#shop">Shop arrivals</a>
+            <a class="secondary-link" href="#collections">View collections</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="Store benefits">
+        <div>
+          <strong>Free delivery</strong>
+          <span>On orders above PKR 7,500</span>
+        </div>
+        <div>
+          <strong>Easy checkout</strong>
+          <span>JazzCash, EasyPaisa, or bank transfer</span>
+        </div>
+        <div>
+          <strong>Secure login</strong>
+          <span>Email login and Google sign-in ready</span>
+        </div>
+      </section>
+
+      <section class="section" id="collections">
+        <div class="section-heading">
+          <p class="eyebrow">Curated looks</p>
+          <h2>Collections for every plan</h2>
+        </div>
+        <div class="collection-grid">
+          <article class="collection collection-large">
+            <img src="assets/collection-minimal.svg" alt="Folded neutral clothing set" />
+            <div>
+              <h3>Minimal Staples</h3>
+              <p>Quiet layers, clean cuts, polished neutrals.</p>
+            </div>
+          </article>
+          <article class="collection">
+            <img src="assets/collection-rack.svg" alt="Clothes hanging on a store rack" />
+            <div>
+              <h3>Street Ready</h3>
+              <p>Soft hoodies, relaxed trousers, easy tees.</p>
+            </div>
+          </article>
+          <article class="collection">
+            <img src="assets/collection-evening.svg" alt="Evening clothes and accessories flat lay" />
+            <div>
+              <h3>Evening Edit</h3>
+              <p>Sharp silhouettes with richer textures.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section shop-section" id="shop">
+        <div class="section-heading shop-heading">
+          <div>
+            <p class="eyebrow">Shop clothing</p>
+            <h2>Featured products</h2>
+          </div>
+          <div class="filters" role="list" aria-label="Product filters">
+            <button class="filter active" type="button" data-filter="all">All</button>
+            <button class="filter" type="button" data-filter="men">Men</button>
+            <button class="filter" type="button" data-filter="women">Women</button>
+            <button class="filter" type="button" data-filter="outerwear">Outerwear</button>
+          </div>
+        </div>
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="checkout-band" id="checkout">
+        <div class="checkout-copy">
+          <p class="eyebrow">Simple checkout</p>
+          <h2>Checkout</h2>
+          <p>Sign in, save your address, choose a payment method, and place the order in one clear flow.</p>
+        </div>
+        <div class="checkout-layout">
+          <form class="checkout-form daraz-checkout" id="checkoutForm">
+            <div class="checkout-step">
+              <div class="step-number">1</div>
+              <div>
+                <h3>Delivery address</h3>
+                <p id="signedInLabel">Sign in to save this address for next time.</p>
+              </div>
+            </div>
+            <div class="field-row">
+              <label>
+                Full name
+                <input name="name" id="checkoutName" type="text" autocomplete="name" required />
+              </label>
+              <label>
+                Phone
+                <input name="phone" id="checkoutPhone" type="tel" autocomplete="tel" required />
+              </label>
+            </div>
+            <label>
+              Delivery address
+              <textarea name="address" id="checkoutAddress" rows="3" required></textarea>
+            </label>
+            <button class="secondary-button" id="saveAddressButton" type="button">Save address</button>
+
+            <div class="checkout-step">
+              <div class="step-number">2</div>
+              <div>
+                <h3>Package</h3>
+                <p>Review item availability and delivery estimate.</p>
+              </div>
+            </div>
+            <div class="checkout-items" id="checkoutItems"></div>
+
+            <div class="checkout-step">
+              <div class="step-number">3</div>
+              <div>
+                <h3>Payment method</h3>
+                <p>Choose cashless payment or bank transfer.</p>
+              </div>
+            </div>
+            <div class="payment-options" id="paymentOptions">
+              <label class="payment-card">
+                <input type="radio" name="payment" value="JazzCash" checked />
+                <span>JazzCash</span>
+              </label>
+              <label class="payment-card">
+                <input type="radio" name="payment" value="EasyPaisa" />
+                <span>EasyPaisa</span>
+              </label>
+              <label class="payment-card">
+                <input type="radio" name="payment" value="Bank Transfer" />
+                <span>Any bank</span>
+              </label>
+            </div>
+            <div class="payment-note" id="paymentNote"></div>
+          </form>
+
+          <aside class="order-summary">
+            <h3>Order summary</h3>
+            <div>
+              <span>Items</span>
+              <strong id="summaryItems">0</strong>
+            </div>
+            <div>
+              <span>Subtotal</span>
+              <strong id="summarySubtotal">PKR 0</strong>
+            </div>
+            <div>
+              <span>Delivery</span>
+              <strong id="summaryDelivery">PKR 0</strong>
+            </div>
+            <div>
+              <span>Discount</span>
+              <strong id="summaryDiscount">PKR 0</strong>
+            </div>
+            <div class="checkout-total">
+              <span>Total</span>
+              <strong id="checkoutTotal">PKR 0</strong>
+            </div>
+            <button class="primary-button" form="checkoutForm" type="submit">Place order</button>
+          </aside>
+        </div>
+      </section>
+
+      <section class="admin-section" id="admin">
+        <div class="section-heading">
+          <p class="eyebrow">Admin panel</p>
+          <h2>Manage store</h2>
+        </div>
+        <div class="admin-login" id="adminLogin">
+          <label>
+            Admin passcode
+            <input id="adminPasscode" type="password" autocomplete="current-password" placeholder="Enter admin123" />
+          </label>
+          <button class="primary-button" id="adminLoginButton" type="button">Open admin</button>
+          <p>Admin actions now run through the backend. Change ADMIN_PASSWORD and SESSION_SECRET before using this outside your computer.</p>
+        </div>
+        <div class="admin-panel" id="adminPanel" hidden>
+          <div class="admin-tabs" role="tablist" aria-label="Admin sections">
+            <button class="admin-tab active" type="button" data-admin-tab="products">Products</button>
+            <button class="admin-tab" type="button" data-admin-tab="orders">Orders</button>
+            <button class="admin-tab" type="button" data-admin-tab="users">Users</button>
+            <button class="admin-tab" type="button" data-admin-tab="message">Message</button>
+          </div>
+
+          <div class="admin-view active" data-admin-view="products">
+            <form class="admin-form" id="productForm">
+              <input name="id" type="hidden" />
+              <div class="field-row">
+                <label>
+                  Product name
+                  <input name="name" type="text" required />
+                </label>
+                <label>
+                  Price
+                  <input name="price" type="number" min="1" required />
+                </label>
+              </div>
+              <div class="field-row">
+                <label>
+                  Category
+                  <select name="category">
+                    <option value="men">Men</option>
+                    <option value="women">Women</option>
+                    <option value="outerwear">Outerwear</option>
+                  </select>
+                </label>
+                <label>
+                  Image
+                  <select name="image">
+                    <option value="assets/product-tee.svg">Tee</option>
+                    <option value="assets/product-overshirt.svg">Overshirt</option>
+                    <option value="assets/product-dress.svg">Dress</option>
+                    <option value="assets/product-utility-jacket.svg">Jacket</option>
+                    <option value="assets/product-trouser.svg">Trouser</option>
+                    <option value="assets/product-coat.svg">Coat</option>
+                  </select>
+                </label>
+              </div>
+              <label>
+                Description
+                <input name="description" type="text" required />
+              </label>
+              <div class="field-row">
+                <label>
+                  Offer text
+                  <input name="offer" type="text" placeholder="20% OFF" />
+                </label>
+                <label class="checkbox-label">
+                  <input name="soldOut" type="checkbox" />
+                  Sold out
+                </label>
+              </div>
+              <button class="primary-button" type="submit">Save product</button>
+            </form>
+            <div class="admin-list" id="adminProducts"></div>
+          </div>
+
+          <div class="admin-view" data-admin-view="orders">
+            <div class="admin-list" id="adminOrders"></div>
+          </div>
+
+          <div class="admin-view" data-admin-view="users">
+            <div class="admin-list" id="adminUsers"></div>
+          </div>
+
+          <div class="admin-view" data-admin-view="message">
+            <form class="admin-form" id="messageForm">
+              <label>
+                Website message
+                <textarea name="message" id="adminMessage" rows="3" placeholder="Type message shown to visitors"></textarea>
+              </label>
+              <button class="primary-button" type="submit">Publish message</button>
+              <button class="secondary-button" id="clearMessageButton" type="button">Clear message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="drawer" id="cartDrawer" aria-hidden="true" aria-label="Shopping cart">
+      <div class="drawer-panel">
+        <div class="drawer-header">
+          <h2>Your cart</h2>
+          <button class="close-button" id="cartClose" type="button" aria-label="Close cart">x</button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-summary">
+          <div>
+            <span>Subtotal</span>
+            <strong id="cartSubtotal">PKR 0</strong>
+          </div>
+          <a class="primary-link full" href="#checkout" id="checkoutLink">Checkout</a>
+        </div>
+      </div>
+    </aside>
+
+    <div class="modal" id="loginModal" aria-hidden="true" role="dialog" aria-labelledby="loginTitle">
+      <div class="modal-panel">
+        <div class="drawer-header">
+          <h2 id="loginTitle">Login</h2>
+          <button class="close-button" id="loginClose" type="button" aria-label="Close login">x</button>
+        </div>
+        <form class="login-form" id="loginForm">
+          <label>
+            Email
+            <input name="email" type="email" autocomplete="email" required />
+          </label>
+          <label>
+            Password
+            <input name="password" type="password" autocomplete="current-password" required minlength="6" />
+          </label>
+          <button class="primary-button" type="submit">Login with email</button>
+        </form>
+        <div class="divider"><span>or</span></div>
+        <div
+          id="g_id_onload"
+          data-client_id="1018194590920-1udrfd5bta8so1kt52til47nbmp4kb95.apps.googleusercontent.com"
+          data-callback="handleGoogleCredential"
+          data-auto_prompt="false">
+        </div>
+        <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline" data-text="signin_with" data-shape="rectangular" data-logo_alignment="left"></div>
+        <p class="login-status" id="loginStatus">Not signed in.</p>
+      </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

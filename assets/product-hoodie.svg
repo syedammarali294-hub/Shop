@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-label="Soft hoodie product">
+  <rect width="720" height="900" fill="#e5ebe9"/>
+  <path d="M270 220c0-92 180-92 180 0l56 104-48 34-34-58v420H296V300l-34 58-48-34z" fill="#0f766e"/>
+  <path d="M296 222c24-74 104-74 128 0l-30 72h-68z" fill="#0a514b"/>
+  <path d="M314 460h92c28 0 50 22 50 50v82H264v-82c0-28 22-50 50-50z" fill="#0a514b" opacity=".55"/>
+  <path d="M330 284v76M390 284v76" stroke="#d2ebe8" stroke-width="8" stroke-linecap="round"/>
+</svg>

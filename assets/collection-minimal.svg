@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-label="Folded neutral clothing set">
+  <rect width="900" height="1100" fill="#d8cec0"/>
+  <rect x="90" y="120" width="720" height="860" rx="24" fill="#eee8de"/>
+  <rect x="160" y="220" width="420" height="180" rx="18" fill="#c9b99f"/>
+  <rect x="190" y="250" width="360" height="28" rx="14" fill="#efe6da" opacity=".7"/>
+  <rect x="240" y="430" width="470" height="190" rx="20" fill="#191816"/>
+  <rect x="282" y="472" width="390" height="30" rx="15" fill="#443f39"/>
+  <rect x="170" y="650" width="560" height="210" rx="22" fill="#0f766e"/>
+  <rect x="220" y="700" width="460" height="28" rx="14" fill="#70aaa4" opacity=".55"/>
+  <circle cx="680" cy="285" r="58" fill="#c79535"/>
+  <circle cx="720" cy="335" r="36" fill="#b95065"/>
+</svg>

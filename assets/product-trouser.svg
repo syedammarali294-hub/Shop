@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-label="Wide leg trouser product">
+  <rect width="720" height="900" fill="#efe8dd"/>
+  <rect x="236" y="116" width="248" height="86" rx="12" fill="#c79535"/>
+  <path d="M248 202h104l-16 552H188z" fill="#d1a348"/>
+  <path d="M368 202h104l60 552H384z" fill="#c79535"/>
+  <path d="M360 210v520" stroke="#8b651f" stroke-width="8" opacity=".55"/>
+  <path d="M274 246h58M390 246h58" stroke="#8b651f" stroke-width="10" stroke-linecap="round" opacity=".55"/>
+</svg>

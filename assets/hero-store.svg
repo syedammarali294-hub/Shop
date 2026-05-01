@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Empty clothing store interior">
+  <defs>
+    <linearGradient id="wall" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#655546"/>
+      <stop offset="0.55" stop-color="#2f302c"/>
+      <stop offset="1" stop-color="#141412"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#b69a78"/>
+      <stop offset="1" stop-color="#5c4635"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#wall)"/>
+  <rect y="610" width="1600" height="290" fill="url(#floor)"/>
+  <g opacity=".22" stroke="#f4dfbd" stroke-width="3">
+    <path d="M0 610h1600M120 900l420-290M410 900l260-290M720 900l80-290M1020 900l-120-290M1320 900l-320-290"/>
+  </g>
+  <rect x="950" y="126" width="440" height="452" rx="8" fill="#211f1d" stroke="#c1a37b" stroke-width="8"/>
+  <g stroke="#d7c0a0" stroke-linecap="round" stroke-width="10">
+    <path d="M1010 228h320"/>
+    <path d="M1010 342h320"/>
+    <path d="M1010 456h320"/>
+  </g>
+  <g>
+    <rect x="1018" y="248" width="76" height="72" rx="6" fill="#f3efe8"/>
+    <rect x="1116" y="248" width="76" height="72" rx="6" fill="#c79535"/>
+    <rect x="1214" y="248" width="76" height="72" rx="6" fill="#0f766e"/>
+    <rect x="1018" y="362" width="76" height="72" rx="6" fill="#b95065"/>
+    <rect x="1116" y="362" width="76" height="72" rx="6" fill="#ded6c9"/>
+    <rect x="1214" y="362" width="76" height="72" rx="6" fill="#191816"/>
+  </g>
+  <g transform="translate(190 155)">
+    <path d="M60 118h520" stroke="#e2c79b" stroke-width="14" stroke-linecap="round"/>
+    <path d="M105 118v410M545 118v410" stroke="#8e7559" stroke-width="14" stroke-linecap="round"/>
+    <g stroke="#efe7dc" stroke-width="5" stroke-linecap="round" fill="none">
+      <path d="M170 120l-34 42h68z"/>
+      <path d="M270 120l-34 42h68z"/>
+      <path d="M370 120l-34 42h68z"/>
+      <path d="M470 120l-34 42h68z"/>
+    </g>
+    <path d="M116 162h108l34 96-32 16-22-52v238H136V222l-22 52-32-16z" fill="#e9e2d7"/>
+    <path d="M224 162h108l34 96-32 16-22-52v238H244V222l-22 52-32-16z" fill="#0f766e"/>
+    <path d="M332 162h108l34 96-32 16-22-52v238H352V222l-22 52-32-16z" fill="#c79535"/>
+    <path d="M440 162h108l34 96-32 16-22-52v238H460V222l-22 52-32-16z" fill="#b95065"/>
+  </g>
+  <rect x="94" y="686" width="560" height="62" rx="12" fill="#1d1b19"/>
+  <rect x="108" y="648" width="210" height="48" rx="8" fill="#f3efe8"/>
+  <rect x="336" y="632" width="238" height="64" rx="8" fill="#c79535"/>
+  <rect x="604" y="670" width="142" height="26" rx="6" fill="#0f766e"/>
+</svg>

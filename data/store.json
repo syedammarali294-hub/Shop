@@ -1,0 +1,91 @@
+{
+    "products":  [
+                     {
+                         "id":  "linen-overshirt",
+                         "name":  "Linen Overshirt",
+                         "category":  "men",
+                         "description":  "Breathable layer with a relaxed tailored fit.",
+                         "price":  6200,
+                         "image":  "assets/product-overshirt.svg",
+                         "offer":  "New",
+                         "soldOut":  false
+                     },
+                     {
+                         "id":  "satin-midi-dress",
+                         "name":  "Satin Midi Dress",
+                         "category":  "women",
+                         "description":  "Soft shine, fluid drape, evening-ready comfort.",
+                         "price":  8900,
+                         "image":  "assets/product-dress.svg",
+                         "offer":  "15% OFF",
+                         "soldOut":  false
+                     },
+                     {
+                         "id":  "boxy-cotton-tee",
+                         "name":  "Boxy Cotton Tee",
+                         "category":  "men",
+                         "description":  "Heavy cotton tee with a clean structured sleeve.",
+                         "price":  2800,
+                         "image":  "assets/product-tee.svg",
+                         "offer":  "Best seller",
+                         "soldOut":  false
+                     },
+                     {
+                         "id":  "rib-knit-top",
+                         "name":  "Rib Knit Top",
+                         "category":  "women",
+                         "description":  "Fine rib texture with a close, comfortable fit.",
+                         "price":  3400,
+                         "image":  "assets/product-knit-top.svg",
+                         "offer":  "",
+                         "soldOut":  false
+                     },
+                     {
+                         "id":  "utility-jacket",
+                         "name":  "Utility Jacket",
+                         "category":  "outerwear",
+                         "description":  "Four-pocket canvas jacket for all-season layering.",
+                         "price":  11200,
+                         "image":  "assets/product-utility-jacket.svg",
+                         "offer":  "",
+                         "soldOut":  true
+                     },
+                     {
+                         "id":  "wide-leg-trouser",
+                         "name":  "Wide Leg Trouser",
+                         "category":  "women",
+                         "description":  "Pressed front, soft fall, easy office-to-dinner style.",
+                         "price":  7200,
+                         "image":  "assets/product-trouser.svg",
+                         "offer":  "Free delivery",
+                         "soldOut":  false
+                     },
+                     {
+                         "id":  "soft-hoodie",
+                         "name":  "Soft Hoodie",
+                         "category":  "men",
+                         "description":  "Brushed fleece hoodie with hidden side pockets.",
+                         "price":  5900,
+                         "image":  "assets/product-hoodie.svg",
+                         "offer":  "",
+                         "soldOut":  false
+                     },
+                     {
+                         "id":  "wool-blend-coat",
+                         "name":  "Wool Blend Coat",
+                         "category":  "outerwear",
+                         "description":  "Longline coat with a clean collar and warm hand feel.",
+                         "price":  16800,
+                         "image":  "assets/product-coat.svg",
+                         "offer":  "Premium",
+                         "soldOut":  false
+                     }
+                 ],
+    "users":  [
+
+              ],
+    "orders":  [
+
+               ],
+    "siteMessage":  "Welcome! New offers are available today."
+}

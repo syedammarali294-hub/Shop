@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-label="Linen overshirt product">
+  <rect width="720" height="900" fill="#eee8de"/>
+  <path d="M256 130h208l88 156-56 34-48-82v492H272V238l-48 82-56-34z" fill="#d4c3ab"/>
+  <path d="M328 130h64l36 86h-136z" fill="#eee8de"/>
+  <path d="M360 218v512M280 332h160M288 454h144" stroke="#8d7a62" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="382" cy="310" r="10" fill="#8d7a62"/>
+  <circle cx="382" cy="390" r="10" fill="#8d7a62"/>
+  <circle cx="382" cy="470" r="10" fill="#8d7a62"/>
+</svg>

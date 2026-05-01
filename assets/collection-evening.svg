@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-label="Evening clothes and accessories flat lay">
+  <rect width="900" height="650" fill="#25221f"/>
+  <rect x="110" y="85" width="360" height="470" rx="28" fill="#11100f"/>
+  <path d="M215 118h150l76 118-48 28-34-54v274H221V210l-34 54-48-28z" fill="#b95065"/>
+  <path d="M554 120h180l34 84-32 22-24-48v322H576V178l-24 48-32-22z" fill="#f3efe8"/>
+  <rect x="600" y="180" width="88" height="248" rx="42" fill="#191816" opacity=".18"/>
+  <circle cx="690" cy="486" r="44" fill="#c79535"/>
+  <circle cx="744" cy="486" r="44" fill="#c79535"/>
+  <rect x="146" y="506" width="280" height="24" rx="12" fill="#c79535"/>
+</svg>

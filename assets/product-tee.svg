@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-label="Boxy cotton tee product">
+  <rect width="720" height="900" fill="#e9e5df"/>
+  <path d="M238 190h244l112 136-70 62-64-72v374H260V316l-64 72-70-62z" fill="#191816"/>
+  <path d="M314 190h92l34 70H280z" fill="#3d3934"/>
+  <rect x="304" y="360" width="112" height="18" rx="9" fill="#f5f0e8" opacity=".18"/>
+</svg>

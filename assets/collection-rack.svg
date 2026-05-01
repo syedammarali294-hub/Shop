@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-label="Clothes hanging on a store rack">
+  <rect width="900" height="650" fill="#efe9df"/>
+  <path d="M120 130h660" stroke="#594b3e" stroke-width="16" stroke-linecap="round"/>
+  <path d="M170 130v430M730 130v430" stroke="#8a7357" stroke-width="18" stroke-linecap="round"/>
+  <g stroke="#574a3f" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M230 130l-42 52h84z"/>
+    <path d="M345 130l-42 52h84z"/>
+    <path d="M460 130l-42 52h84z"/>
+    <path d="M575 130l-42 52h84z"/>
+    <path d="M690 130l-42 52h84z"/>
+  </g>
+  <path d="M170 182h120l34 92-35 18-22-50v250H193V242l-22 50-35-18z" fill="#191816"/>
+  <path d="M285 182h120l34 92-35 18-22-50v250h-74V242l-22 50-35-18z" fill="#c79535"/>
+  <path d="M400 182h120l34 92-35 18-22-50v250h-74V242l-22 50-35-18z" fill="#f5f0e8"/>
+  <path d="M515 182h120l34 92-35 18-22-50v250h-74V242l-22 50-35-18z" fill="#0f766e"/>
+  <path d="M630 182h120l34 92-35 18-22-50v250h-74V242l-22 50-35-18z" fill="#b95065"/>
+</svg>

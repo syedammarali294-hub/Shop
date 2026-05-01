@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-label="Rib knit top product">
+  <rect width="720" height="900" fill="#f0ebe4"/>
+  <path d="M258 150h204l70 152-50 36-42-78v456H280V260l-42 78-50-36z" fill="#f4eee7"/>
+  <path d="M320 150h80l42 82H278z" fill="#d7cec3"/>
+  <g stroke="#c6baad" stroke-width="8" opacity=".75">
+    <path d="M310 264v420M342 264v420M374 264v420M406 264v420"/>
+  </g>
+</svg>

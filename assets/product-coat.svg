@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-label="Wool blend coat product">
+  <rect width="720" height="900" fill="#ece4d8"/>
+  <path d="M236 122h248l86 152-52 38-50-78 38 530H214l38-530-50 78-52-38z" fill="#6b6258"/>
+  <path d="M306 122h108l58 130-112 84-112-84z" fill="#918477"/>
+  <path d="M360 340v398" stroke="#3d3934" stroke-width="10"/>
+  <circle cx="392" cy="420" r="10" fill="#2a2724"/>
+  <circle cx="392" cy="504" r="10" fill="#2a2724"/>
+  <circle cx="392" cy="588" r="10" fill="#2a2724"/>
+</svg>
